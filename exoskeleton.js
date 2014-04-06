@@ -15,8 +15,8 @@
     });
   } else if (typeof exports !== 'undefined') {
     var _, $;
-    try { _ = require('underscore'); } catch(e) { }
-    try { $ = require('jquery'); } catch(e) { }
+    try { _ = require('lodash'); } catch(e) { }
+    try { $ = require('backbone.native'); } catch(e) { }
     factory(root, exports, _, $);
   } else {
     root.Backbone = root.Exoskeleton = factory(root, {}, root._, (root.jQuery || root.Zepto || root.ender || root.$));
